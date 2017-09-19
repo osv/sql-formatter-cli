@@ -5,6 +5,7 @@
   "bin": "dist/sql-formatter-cli",
   "scripts": {
     "build": "rollup -c --environment BUILD:production",
+    "prepublish": "npm run build",
     "postbuild": "./postbuild.sh",
     "watch": "rollup -c -w"
   },
