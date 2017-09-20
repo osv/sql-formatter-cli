@@ -1,8 +1,8 @@
-import * as fs from 'fs'
+import * as fs from 'fs';
 import sqlFormatter from 'sql-formatter';
-//console.log(sqlFormatter.format('select `a`.`c`, `b`.`b` from table where x=3'))
+import optimist from 'optimist';
 
-let command = require('optimist')
+let command = optimist
       .usage('SQL formatter')
       .default('i', '-')
       .default('o', '-')

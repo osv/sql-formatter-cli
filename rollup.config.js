@@ -36,6 +36,7 @@ export default {
     }
   ],
   external: [
+    'path',
     'fs'
   ]
 };
