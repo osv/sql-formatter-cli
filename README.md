@@ -9,7 +9,7 @@
 
     Options:
       -i, --file  Load a file. "-" - stdin                                                                       [default: "-"]
-      -s, --sql   Sql dialect: "std" Standard SQL, "n1ql" Couchbase N1QL, "db2" IBM DB2, "pl/sql" Oracle PL/SQL  [default: "std"]
+      -s, --sql   Sql dialect: "sql" Standard SQL, "n1ql" Couchbase N1QL, "db2" IBM DB2, "pl/sql" Oracle PL/SQL  [default: "sql"]
       -o, --out   Output file name. "-" - stdout                                                                 [default: "-"]
 
     $ echo "SELECT * FROM databases WHERE category='NoSQL'" | sql-formatter-cli
