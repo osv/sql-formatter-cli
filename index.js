@@ -6,14 +6,14 @@ let command = optimist
       .usage('SQL formatter')
       .default('i', '-')
       .default('o', '-')
-      .default('s', 'std')
+      .default('s', 'sql')
       .alias('i', 'file')
       .alias('o', 'out')
       .alias('s', 'sql')
       .alias('h', 'help')
 
       .describe('i', 'Load a file. "-" - stdin')
-      .describe('s', 'Sql dialect: "std" Standard SQL, "n1ql" Couchbase N1QL, "db2" IBM DB2')
+      .describe('s', 'Sql dialect: "sql" Standard SQL, "n1ql" Couchbase N1QL, "db2" IBM DB2, "pl/sql" Oracle PL/SQL')
       .describe('o', 'Output file name. "-" - stdout');
 let argv = command.argv;
 
@@ -22,7 +22,7 @@ if (argv.h) {
   process.exit();
 }
 
-const supportedDialects = ['std', 'n1ql', 'db2'];
+const supportedDialects = ['sql', 'n1ql', 'db2', 'pl/sql'];
 const dialect = argv.s;
 if (!~supportedDialects.indexOf(dialect)) {
   console.error(`Dialect "${dialect}" does not supported. Supported: ` + supportedDialects.join(', '));
