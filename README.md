@@ -8,9 +8,9 @@
     SQL formatter
 
     Options:
-      -i, --file  Load a file. "-" - stdin                                               [default: "-"]
-      -s, --sql   Sql dialect: "std" Standard SQL, "n1ql" Couchbase N1QL, "db2" IBM DB2  [default: "std"]
-      -o, --out   Output file name. "-" - stdout                                         [default: "-"]
+      -i, --file  Load a file. "-" - stdin                                                                       [default: "-"]
+      -s, --sql   Sql dialect: "sql" Standard SQL, "n1ql" Couchbase N1QL, "db2" IBM DB2, "pl/sql" Oracle PL/SQL  [default: "sql"]
+      -o, --out   Output file name. "-" - stdout                                                                 [default: "-"]
 
     $ echo "SELECT * FROM databases WHERE category='NoSQL'" | sql-formatter-cli
     SELECT
@@ -52,3 +52,8 @@ npm i -g sql-formatter-cli"
                               ;; beautify region or buffer
                               (local-set-key (kbd "C-c t") 'sql-beautify-region)))
 ```
+
+## TODO
+
+- [ ] Add version option support
+- [ ] Add integrity tests
