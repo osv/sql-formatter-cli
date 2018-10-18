@@ -1,6 +1,6 @@
 {
   "name": "sql-formatter-cli",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Formats whitespaces in a SQL query to make it more readable. Binary version",
   "bin": "dist/sql-formatter-cli",
   "scripts": {
@@ -9,7 +9,7 @@
     "postbuild": "./postbuild.sh",
     "watch": "rollup -c -w"
   },
-  "repository": "rollup/sql-formatter-cli",
+  "repository": "osv/sql-formatter-cli",
   "keywords": [
     "cli",
     "sql",
