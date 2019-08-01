@@ -57,3 +57,4 @@ npm i -g sql-formatter-cli"
 
 - [ ] Add version option support
 - [ ] Add integrity tests
+- [x] Use yarn instead of npm

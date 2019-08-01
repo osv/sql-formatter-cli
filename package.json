@@ -1,11 +1,11 @@
 {
   "name": "sql-formatter-cli",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Formats whitespaces in a SQL query to make it more readable. Binary version",
   "bin": "dist/sql-formatter-cli",
   "scripts": {
     "build": "rollup -c --environment BUILD:production",
-    "prepublish": "npm run build",
+    "prepublish": "yarn run build",
     "postbuild": "./postbuild.sh",
     "watch": "rollup -c -w"
   },
@@ -45,6 +45,6 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-watch": "^4.0.0",
-    "sql-formatter": "2.3.1"
+    "sql-formatter": "2.3.3"
   }
 }
