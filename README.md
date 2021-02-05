@@ -2,6 +2,11 @@
 
 ---
 
+## Not maintained
+
+This package is not maintained anymore because [sql-formatter](https://github.com/zeroturnaround/sql-formatter) contains command line client too now.
+Install sql-formatter and refer to it's manual how to use it.
+
 ## SYNOPSIS
 
     $ sql-formatter-cli -h
